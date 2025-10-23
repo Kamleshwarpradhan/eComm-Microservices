@@ -1,0 +1,12 @@
+#spring.application.name=ecomm-app
+#spring.h2.console.enabled=true
+#spring.datasource.url=jdbc:h2:mem:test
+#spring.jpa.show-sql = true // This will allow us to see what sql query is used behind the sense to do the job
+#spring.jpa.hibernate.ddl-auto = create // Whenever the app started this will convert all the entity into table
+#management.endpoints.web.exposure.include=*
+
+spring:
+  application:
+    name: product-microservice
+  config:
+    import: optional:configserver:http://localhost:8888
