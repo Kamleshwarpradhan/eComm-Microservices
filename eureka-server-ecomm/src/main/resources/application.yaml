@@ -1,0 +1,13 @@
+#spring.application.name=eureka-server-ecomm
+
+spring:
+  application:
+    name: eureka-server-ecomm
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+server:
+  port: 8761
